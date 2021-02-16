@@ -1,0 +1,93 @@
+<!--トップページ-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>書籍管理データベースVer1.0</title>
+    <link rel="stylesheet" src="toppage.css">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background: lightgreen;
+            opacity: 0.8;
+            padding: 10px 10px 10px 10px;
+            vertical-align: middle;
+        }
+        h1 {
+            float: left;
+        }
+        header .login {
+            float: right;
+            border: 1px solid black;
+            opacity: 0.7;
+            line-height: 30px;
+            cursor: pointer;
+            margin-right: 20px;         
+        }
+        main {
+            text-align: center;
+        }
+        .tr-buttons {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .tr-container {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px 5px;
+            width: 45%;
+            height: 150px;
+            margin-bottom: 20px;
+            background: rgba(128, 128, 128, 0.4);
+        }
+        a {
+            font-size: 20px;
+        }
+        footer {
+            height: 50px;
+            width: 100%;
+            background-color: skyblue;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>書籍管理データベース</h1>
+        <a class="login" href="https://twitter.com/home">ログイン</a>
+    </header>
+    <main>
+        <p>利用したい機能を選択してください。</p>
+        <div class="tr-buttons">
+            <div class="tr-container">
+                <a href="">書籍登録</a>
+                <p>新規に書籍を登録できます。<br>書籍はジャンルごとに管理できます。新規ジャンルを登録したい場合はジャンルマスタ管理からジャンル登録を行ってください。</p>
+            </div>
+            <div class="tr-container">
+                <a href="">ジャンルマスタ管理</a>
+                <P>書籍のジャンルの登録・変更・削除ができます。<br>書籍はジャンルごとに登録でき、書籍管理ではジャンルごとにデータベースの呼び出しが行えます。</P>
+            </div>
+            <div class="tr-container">
+                <a href="">書籍管理</a>
+                <p>所有している書籍データの検索・削除・変更が行えます。<br>栞機能データから読書グラフを作成できます。書籍評価機能により評価値の算出を行えます。</p>
+            </div>
+            <div class="tr-container">
+                <a href="">電子書籍化ツール</a>
+                <p>所有している書籍の電子書籍化に便利なツールです。</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>BMD</h2>
+    </footer>
+</body>
+</html>
